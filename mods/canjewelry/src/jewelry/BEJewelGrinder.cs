@@ -315,7 +315,6 @@ namespace canjewelry.src.jewelry
             if (block.BlockId == 0)
                 return (MeshData)null;
             MeshData modeldata = null;
-            // var c = Shape.TryGet(this.Api, "canmods:shapes/block/jewelgrinder.json");
             if (type.Equals("base")){
                 ((ICoreClientAPI)this.Api).Tesselator.TesselateShape((CollectibleObject)block, Shape.TryGet(this.Api, "canjewelry:shapes/block/jewelgrinder.json"), out modeldata);
             }
@@ -357,10 +356,6 @@ namespace canjewelry.src.jewelry
             if(canjewelry.sapi == null)
             {
                 return;
-            }
-            if(secondsUsed > 4)
-            {
-                var c = 3;
             }
             if(!this.playersGrinding.ContainsKey(player.PlayerUID) || (double)this.GrindSpeed < 0.3)
             {
@@ -625,10 +620,6 @@ namespace canjewelry.src.jewelry
             get
             {
                 CompositeTexture compositeTexture;
-                if(!textureCode.Contains("generic"))
-                {
-                    var c = 3;
-                }
                 if (textureCode == "steel" && this.inventory[0].Itemstack != null)
                 {
                     //this.inventory[0].Itemstack.Item.Textures.TryGetValue("metal", out compositeTexture);

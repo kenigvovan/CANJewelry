@@ -31,10 +31,6 @@ namespace canjewelry.src.jewelry
         {
             get
             {
-                if (textureCode.Contains("defect"))
-                {
-                    var c = 3;
-                }
                 return this.getOrCreateTexPos(this.tmpTextures[textureCode]);
             }
         }

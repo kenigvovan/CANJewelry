@@ -517,7 +517,6 @@ namespace canjewelry.src
                 if (!(playerHotbar[fromSlot].Itemstack.Item != null && playerHotbar[fromSlot].Itemstack.Item is ItemWearable))
                 {
                     ITreeAttribute encrustTreeHere = playerHotbar[fromSlot].Itemstack.Attributes.GetTreeAttribute("canencrusted");
-                    //var c = playerHotbar[fromSlot].Itemstack;
                     if (encrustTreeHere == null)
                     {
                         return;
