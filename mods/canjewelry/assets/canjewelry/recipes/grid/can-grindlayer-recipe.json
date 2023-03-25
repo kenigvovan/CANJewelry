@@ -1,0 +1,113 @@
+﻿[
+  {
+
+    "ingredientPattern": "_C_,CPC,DDD",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:resin",
+        "quantity": 2
+      },
+      "T": {
+        "type": "item",
+        "code": "canjewelry:crushed-diamond",
+        "quantity": 1
+      },
+      "C": {
+        "type": "item",
+        "code": "game:crushed-*",
+        "allowedVariants": [ "limonite", "magnetite", "hematite"],
+        "quantity": 2
+      },
+
+      "D": {
+        "type": "item",
+        "code": "game:leather-*",
+        "allowedVariants": [ "plain", "black" ],
+        "quantity": 2
+      }
+    },
+    "name": "cangrindlayer-rough",
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "block",
+      "code": "canjewelry:grindlayeritem-rough",
+      "quantity": 1
+    }
+  },
+  {
+
+    "ingredientPattern": "_T_,TPT,DDD",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:resin",
+        "quantity": 2
+      },
+      "T": {
+        "type": "item",
+        "code": "canjewelry:crushed-diamond",
+        "quantity": 1
+      },
+      "C": {
+        "type": "item",
+        "code": "game:crushed-*",
+        "allowedVariants": [ "limonite", "magnetite", "hematite" ],
+        "quantity": 1
+      },
+
+      "D": {
+        "type": "item",
+        "code": "game:leather-*",
+        "allowedVariants": [ "plain", "black" ],
+        "quantity": 2
+      }
+    },
+    "name": "cangrindlayer-medium",
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "block",
+      "code": "canjewelry:grindlayeritem-medium",
+      "quantity": 1
+    }
+  },
+  {
+
+    "ingredientPattern": "_D_,DPD,DDD",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:resin",
+        "quantity": 2
+      },
+      "T": {
+        "type": "item",
+        "code": "canjewelry:crushed-diamond",
+        "quantity": 1
+      },
+      "C": {
+        "type": "item",
+        "code": "game:crushed-*",
+        "allowedVariants": [ "limonite", "magnetite", "hematite" ],
+        "quantity": 1
+      },
+
+      "D": {
+        "type": "item",
+        "code": "game:leather-*",
+        "allowedVariants": [ "plain", "black" ],
+        "quantity": 2
+      }
+    },
+    "name": "cangrindlayer-fine",
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "block",
+      "code": "canjewelry:grindlayeritem-fine",
+      "quantity": 1
+    }
+  }
+]

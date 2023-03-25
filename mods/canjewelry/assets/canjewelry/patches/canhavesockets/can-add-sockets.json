@@ -1,0 +1,175 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "knife-gold": 1,
+      "knife-silver": 1,
+      "knife-iron": 1,
+      "knife-meteoriciron": 2,
+      "knife-steel": 3
+    },
+    "file": "game:itemtypes/tool/knife.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-blackbronze": 1,
+      "*-tinbronze": 1,
+      "*-bismuthbronze": 1,
+      "*-gold": 1,
+      "*-silver": 1,
+      "*-iron": 2,
+      "*-meteoriciron": 2,
+      "*-steel": 3,
+      "*": 0
+    },
+    "file": "game:itemtypes/tool/pickaxe.json"
+  },
+
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-blackbronze": 1,
+      "*-tinbronze": 1,
+      "*-bismuthbronze": 1,
+      "*-gold": 1,
+      "*-silver": 1,
+      "*-iron": 2,
+      "*-meteoriciron": 2,
+      "*-steel": 3,
+      "*": 0
+    },
+    "file": "game:itemtypes/tool/scythe.json"
+  },
+
+
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-blackbronze": 1,
+      "*-tinbronze": 1,
+      "*-bismuthbronze": 1,
+      "*-gold": 1,
+      "*-silver": 1,
+      "*-iron": 2,
+      "*-meteoriciron": 2,
+      "*-steel": 3,
+      "*": 0
+    },
+    "file": "game:itemtypes/tool/shovel.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "armor-head-brigandine-*": 1,
+      "armor-legs-brigandine-*": 1,
+      "armor-body-brigandine-*": 2,
+
+      "armor-head-plate-*": 1,
+      "armor-legs-plate-*": 1,
+      "armor-body-plate-*": 2,
+
+      "armor-head-scale-*": 1,
+      "armor-legs-scale-*": 1,
+      "armor-body-scale-*": 2,
+
+      "armor-head-chain-*": 1,
+      "armor-legs-chain-*": 1,
+      "armor-body-chain-*": 2
+    },
+    "file": "game:itemtypes/wearable/armor.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/zweihander.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/halberd.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/longsword.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/mace.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/messer.json"
+
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/pike.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/rapier.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-meteoriciron": 1,
+      "*-steel": 2
+    },
+    "file": "xmelee:itemtypes/weapon/spear.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/canhavesocketsnumberByType",
+    "value": {
+      "*-gold": 1,
+      "*-silver": 1,
+      "*-iron": 1,
+      "*-meteoriciron": 2,
+      "*-steel": 2,
+      "*-blackguard": 2,
+      "*-forlorn": 2,
+      "*-admin": 3
+    },
+    "file": "game:itemtypes/tool/blade.json"
+  }
+]

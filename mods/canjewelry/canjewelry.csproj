@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{076D01EA-3BEB-4096-99C4-311DE5D3B969}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>canjewelry</RootNamespace>
+    <AssemblyName>canjewelry</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(ProjectDir)\bin</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Debug\canjewelry\</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(ProjectDir)\bin</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Release\canjewelry\</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\AppData\Roaming\Vintagestory\Lib\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="cairo-sharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\AppData\Roaming\Vintagestory\Lib\cairo-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\canjewelry\textures\block\chert.png" />
+    <Content Include="assets\canjewelry\textures\block\generic.png" />
+    <Content Include="assets\canjewelry\textures\block\granite.png" />
+    <Content Include="assets\canjewelry\textures\block\jewelset\bottom.png" />
+    <Content Include="assets\canjewelry\textures\block\jewelset\legs.png" />
+    <Content Include="assets\canjewelry\textures\block\jewelset\top.png" />
+    <Content Include="assets\canjewelry\textures\block\meteoriciron.png" />
+    <Content Include="assets\canjewelry\textures\block\phyllite4.png" />
+    <Content Include="assets\canjewelry\textures\effects\slowmining1.png" />
+    <Content Include="assets\canjewelry\textures\effects\slowmining2.png" />
+    <Content Include="assets\canjewelry\textures\effects\slowmining3.png" />
+    <Content Include="assets\canjewelry\textures\effects\walkspeed1m.png" />
+    <Content Include="assets\canjewelry\textures\effects\walkspeed1p.png" />
+    <Content Include="assets\canjewelry\textures\effects\walkspeed2m.png" />
+    <Content Include="assets\canjewelry\textures\effects\walkspeed2p.png" />
+    <Content Include="assets\canjewelry\textures\effects\walkspeed3m.png" />
+    <Content Include="assets\canjewelry\textures\effects\walkspeed3p.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\corundum-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\corundum.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\diamond-1.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\diamond-2.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\diamond-3.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\diamond-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\diamond.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\emeral.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\emerald-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\emerald.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\fluorite-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\fluorite.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\lapislazuli-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\lapislazuli.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\malachite-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\malachite.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\notvis.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\olivine-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\olivine.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\quartz-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\quartz.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\uranium-defect.png" />
+    <Content Include="assets\canjewelry\textures\item\gem\uranium.png" />
+    <Content Include="assets\canjewelry\textures\item\grindlayer\fine.png" />
+    <Content Include="assets\canjewelry\textures\item\grindlayer\medium.png" />
+    <Content Include="assets\canjewelry\textures\item\grindlayer\rough.png" />
+    <Content Include="assets\canjewelry\textures\item\iron.png" />
+    <Content Include="assets\canjewelry\textures\item\resource\crochides\leather-croc.png" />
+    <Content Include="assets\canjewelry\textures\item\resource\crochides\prepared.png" />
+    <Content Include="assets\canjewelry\textures\item\resource\crochides\scraped.png" />
+    <Content Include="assets\canjewelry\textures\item\resource\crochides\soaked.png" />
+    <Content Include="assets\canjewelry\textures\item\resource\diamond-crushed.png" />
+    <Content Include="assets\canjewelry\textures\item\steel.png" />
+    <Content Include="assets\canjewelry\textures\item\tinbronze.png" />
+    <Content Include="modinfo.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\blocks\GrindLayerBlock.cs" />
+    <Compile Include="src\canjewelry.cs" />
+    <Compile Include="src\cb\EncrustableCB.cs" />
+    <Compile Include="src\Config.cs" />
+    <Compile Include="src\harmPatch.cs" />
+    <Compile Include="src\jewelry\BEJewelGrinder.cs" />
+    <Compile Include="src\jewelry\BlockJewelGrinder.cs" />
+    <Compile Include="src\jewelry\GuiDialogBlockEntityJewelGrinder.cs" />
+    <Compile Include="src\jewelry\GuiDialogJewelerSet.cs" />
+    <Compile Include="src\jewelry\GuiDialogSocketsInfo.cs" />
+    <Compile Include="src\jewelry\InventoryJewelerSet.cs" />
+    <Compile Include="src\jewelry\InventoryJewelGrinder.cs" />
+    <Compile Include="src\jewelry\JewelerSetBE.cs" />
+    <Compile Include="src\jewelry\JewelerSetBlock.cs" />
+    <Compile Include="src\jewelry\JewelGrinderTopRenderer.cs" />
+    <Compile Include="src\jewelry\ProcessedGem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="app.config" />
+    <None Include="assets\canjewelry\blocktypes\grindlayer.json" />
+    <None Include="assets\canjewelry\blocktypes\jewelerset.json" />
+    <None Include="assets\canjewelry\blocktypes\jewelgrinder.json" />
+    <None Include="assets\canjewelry\itemtypes\encrusting\processedgem.json" />
+    <None Include="assets\canjewelry\itemtypes\encrusting\socket.json" />
+    <None Include="assets\canjewelry\itemtypes\resource\crushed-diamond.json" />
+    <None Include="assets\canjewelry\itemtypes\resource\gem-cut.json" />
+    <None Include="assets\canjewelry\itemtypes\resource\gem-rough.json" />
+    <None Include="assets\canjewelry\lang\en.json" />
+    <None Include="assets\canjewelry\lang\ru.json" />
+    <None Include="assets\canjewelry\patches\canhavesockets\can-add-sockets.json" />
+    <None Include="assets\canjewelry\patches\canhavesockets\can-rock-drop-gems.json" />
+    <None Include="assets\canjewelry\patches\remaps.json" />
+    <None Include="assets\canjewelry\recipes\grid\can-grindlayer-recipe.json" />
+    <None Include="assets\canjewelry\recipes\grid\can-old-gems-to-new.json" />
+    <None Include="assets\canjewelry\recipes\grid\jewelerset.json" />
+    <None Include="assets\canjewelry\recipes\grid\jewelgrinder.json" />
+    <None Include="assets\canjewelry\recipes\smithing\socket.json" />
+    <None Include="assets\canjewelry\shapes\block\jewelgrinder-top.json" />
+    <None Include="assets\canjewelry\shapes\block\jewelgrinder.json" />
+    <None Include="assets\canjewelry\shapes\block\jewelset.json" />
+    <None Include="assets\canjewelry\shapes\block\jewelsetnormal.json" />
+    <None Include="assets\canjewelry\shapes\encrusting\grindlayer.json" />
+    <None Include="assets\canjewelry\shapes\encrusting\socket.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\corundum.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\diamond.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\emerald.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\fluorite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\lapislazuli.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\malachite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\olivine.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\quartz.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\exquisite\uranium.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\corundum.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\diamond.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\emerald.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\fluorite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\lapislazuli.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\malachite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\olivine.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\quartz.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\flawless\uranium.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\corundum.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\diamond.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\emerald.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\fluorite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\lapislazuli.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\malachite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\olivine.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\quartz.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\cut\normal\uranium.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\exquisiteprocessesinggem.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\flawedprocessesinggem.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\normalprocessesinggem.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\corundum.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\diamond.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\emerald.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\fluorite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\lapislazuli.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\malachite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\olivine_peridot.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\quartz.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\chipped\uranium.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\corundum.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\diamond.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\emerald.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\fluorite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\lapislazuli.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\malachite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\olivine_peridot.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\quartz.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\flawed\uranium.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\corundum.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\diamond.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\emerald.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\fluorite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\lapislazuli.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\malachite.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\olivine_peridot.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\quartz.json" />
+    <None Include="assets\canjewelry\shapes\item\gem\rough\normal\uranium.json" />
+    <None Include="assets\game\config\gems-buffs.json" />
+    <None Include="assets\game\patches\CB\can-add-cb.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+copy "$(TargetPath)" "$(ProjectDir)" 
+copy "$(TargetDir)\$(TargetName).pdb" "$(ProjectDir)" 
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
