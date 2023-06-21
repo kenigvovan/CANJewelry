@@ -213,7 +213,7 @@ namespace canjewelry.src.jewelry
         }
         bool canItemContainThisGem(string gemType, ItemStack targetItemStack)
         {
-            if (canjewelry.buffNameToPossibleItem.TryGetValue(gemType, out var hashSetClasses))
+            if (Config.Current.buffNameToPossibleItem.Val.TryGetValue(gemType, out var hashSetClasses))
             {
                 foreach (var it in hashSetClasses)
                 {
@@ -337,11 +337,11 @@ namespace canjewelry.src.jewelry
                                 treeSocket.SetString("attributeBuff", this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"].AsString());
 
                                 var g = this.inventory[i].Itemstack.Collectible.Attributes["canGemType"].AsInt();
-                                var cb = canjewelry.gemBuffValuesByLevel[this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"].ToString()][this.inventory[i].Itemstack.Collectible.Attributes["canGemType"].AsInt().ToString()];
+                                var cb = Config.Current.gems_buffs.Val[this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"].ToString()][this.inventory[i].Itemstack.Collectible.Attributes["canGemType"].AsInt().ToString()];
 
                                 var c = this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"];
-                                var b = canjewelry.gemBuffValuesByLevel[this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"].ToString()];
-                                treeSocket.SetFloat("attributeBuffValue", canjewelry.gemBuffValuesByLevel
+                                var b = Config.Current.gems_buffs.Val[this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"].ToString()];
+                                treeSocket.SetFloat("attributeBuffValue", Config.Current.gems_buffs.Val
                                     [this.inventory[i].Itemstack.Collectible.Attributes["canGemTypeToAttribute"].ToString()][this.inventory[i].Itemstack.Collectible.Attributes["canGemType"].AsInt().ToString()]);
                                 this.inventory[i].TakeOut(1);
                                 this.inventory[i].MarkDirty();

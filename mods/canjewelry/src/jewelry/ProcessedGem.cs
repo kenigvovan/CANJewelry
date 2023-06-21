@@ -68,7 +68,7 @@ namespace canjewelry.src.jewelry
         {
             get
             {
-                return ObjectCacheUtil.GetOrCreate<Dictionary<int, MeshRef>>(this.api, "shieldmeshrefs", () => new Dictionary<int, MeshRef>());
+                return ObjectCacheUtil.GetOrCreate<Dictionary<int, MeshRef>>(this.api, "processedmeshrefs", () => new Dictionary<int, MeshRef>());
             }
         }
         public string Construction
@@ -84,7 +84,7 @@ namespace canjewelry.src.jewelry
             this.curOffY = (this.offY = this.FpHandTransform.Translation.Y);
             this.capi = (api as ICoreClientAPI);
             // this.durabilityGains = this.Attributes["durabilityGains"].AsObject<Dictionary<string, Dictionary<string, int>>>(null);
-            this.AddAllTypesToCreativeInventory();
+            //this.AddAllTypesToCreativeInventory();
         }
         public void AddAllTypesToCreativeInventory()
         {
@@ -148,7 +148,6 @@ namespace canjewelry.src.jewelry
                 tree = itemstack.Attributes.GetTreeAttribute("cangrindlayerinfo");
                 //var tmp = (int)tree.GetString("gembase")[0];
                 meshrefid = gemBaseToInt[tree.GetString("gembase")] + tree.GetInt("grindtype") + gemSizeToInt[tree.GetString("gemsize")];
-                //var c = 3;
                 // gembase gemsize grindtype
                // meshrefid = (int)
             }

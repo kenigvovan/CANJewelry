@@ -43,6 +43,10 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\AppData\Roaming\Vintagestory\Lib\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -52,8 +56,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="VintagestoryAPI">
-      <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+    <Reference Include="VintagestoryAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VintagestoryLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -108,6 +113,7 @@
     <Content Include="assets\canjewelry\textures\item\gem\malachite-defect.png" />
     <Content Include="assets\canjewelry\textures\item\gem\malachite.png" />
     <Content Include="assets\canjewelry\textures\item\gem\notvis.png" />
+    <Content Include="assets\canjewelry\textures\item\notvis.png" />
     <Content Include="assets\canjewelry\textures\item\gem\olivine-defect.png" />
     <Content Include="assets\canjewelry\textures\item\gem\olivine.png" />
     <Content Include="assets\canjewelry\textures\item\gem\quartz-defect.png" />
@@ -135,6 +141,7 @@
     <Compile Include="src\harmPatch.cs" />
     <Compile Include="src\jewelry\BEJewelGrinder.cs" />
     <Compile Include="src\jewelry\BlockJewelGrinder.cs" />
+    <Compile Include="src\jewelry\CANCutGemItem.cs" />
     <Compile Include="src\jewelry\GuiDialogBlockEntityJewelGrinder.cs" />
     <Compile Include="src\jewelry\GuiDialogJewelerSet.cs" />
     <Compile Include="src\jewelry\GuiDialogSocketsInfo.cs" />
@@ -144,6 +151,7 @@
     <Compile Include="src\jewelry\JewelerSetBlock.cs" />
     <Compile Include="src\jewelry\JewelGrinderTopRenderer.cs" />
     <Compile Include="src\jewelry\ProcessedGem.cs" />
+    <Compile Include="src\SyncCANJewelryPacket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -158,10 +166,13 @@
     <None Include="assets\canjewelry\itemtypes\resource\gem-rough.json" />
     <None Include="assets\canjewelry\lang\en.json" />
     <None Include="assets\canjewelry\lang\ru.json" />
+    <None Include="assets\canjewelry\lang\uk.json" />
     <None Include="assets\canjewelry\patches\canhavesockets\can-add-sockets.json" />
     <None Include="assets\canjewelry\patches\canhavesockets\can-rock-drop-gems.json" />
     <None Include="assets\canjewelry\patches\remaps.json" />
+    <None Include="assets\canjewelry\recipes\grid\can-grindlayer-medium.json" />
     <None Include="assets\canjewelry\recipes\grid\can-grindlayer-recipe.json" />
+    <None Include="assets\canjewelry\recipes\grid\can-grindlayer-rough.json" />
     <None Include="assets\canjewelry\recipes\grid\can-old-gems-to-new.json" />
     <None Include="assets\canjewelry\recipes\grid\jewelerset.json" />
     <None Include="assets\canjewelry\recipes\grid\jewelgrinder.json" />
@@ -229,7 +240,6 @@
     <None Include="assets\canjewelry\shapes\item\gem\rough\normal\olivine_peridot.json" />
     <None Include="assets\canjewelry\shapes\item\gem\rough\normal\quartz.json" />
     <None Include="assets\canjewelry\shapes\item\gem\rough\normal\uranium.json" />
-    <None Include="assets\game\config\gems-buffs.json" />
     <None Include="assets\game\patches\CB\can-add-cb.json" />
     <None Include="packages.config" />
   </ItemGroup>

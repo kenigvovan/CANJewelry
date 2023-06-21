@@ -60,7 +60,7 @@ namespace canjewelry.src.jewelry
                 render.GlDisableCullFace();
                 render.GlToggleBlend(blend: true);
                 IStandardShaderProgram standardShaderProgram = render.PreparedStandardShader(pos.X, pos.Y, pos.Z);
-                standardShaderProgram.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
+                standardShaderProgram.Tex2D = api.BlockTextureAtlas.AtlasTextures[0].TextureId;
                 standardShaderProgram.ModelMatrix = ModelMat.Identity().Translate((double)pos.X - cameraPos.X, (double)pos.Y - cameraPos.Y, (double)pos.Z - cameraPos.Z).Translate(0.5f, 0f, 0.5f)
                     .RotateY(AngleRad)
                     .Translate(-0.5f, -0f, -0.5f)

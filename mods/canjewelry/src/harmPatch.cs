@@ -15,6 +15,7 @@ using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
+using Vintagestory.API.Util;
 using Vintagestory.Client.NoObf;
 using Vintagestory.GameContent;
 
@@ -22,10 +23,7 @@ namespace canjewelry.src
 {
     [HarmonyPatch]
     public class harmPatch
-    {
-
-      
-       
+    {         
         public static MeshRef quadModel;
         public static float[] pMatrix = Mat4f.Create();
        
@@ -881,9 +879,9 @@ namespace canjewelry.src
                   BindingFlags.NonPublic | BindingFlags.Instance, null,  new Type[] { typeof(ImageSurface), typeof(LoadedTexture).MakeByRefType(), typeof(bool) }, null);
 
         public static void Postfix_GetHeldItemInfo(Vintagestory.API.Common.CollectibleObject __instance, ItemSlot inSlot,
-      StringBuilder dsc,
-      IWorldAccessor world,
-      bool withDebugInfo)
+        StringBuilder dsc,
+        IWorldAccessor world,
+        bool withDebugInfo)
         {
             ItemStack itemstack = inSlot.Itemstack;
             if(itemstack.Attributes.HasAttribute("canencrusted"))

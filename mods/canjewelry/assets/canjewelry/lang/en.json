@@ -59,41 +59,44 @@
   "item-gem-rough-flawed-uranium": "Medium rough uranium",
   "item-gem-rough-normal-uranium": "Great rough uranium",
 
+  //Cut gems
+
   "item-gem-cut-exquisite-diamond": "Great cut diamond",
   "item-gem-cut-flawless-diamond": "Medium cut diamond",
   "item-gem-cut-normal-diamond": "Small cut diamond",
 
   "item-gem-cut-exquisite-corundum": "Great cut corundum",
   "item-gem-cut-flawless-corundum": "Medium cut corundum",
-  "item-gem-cut-normal-corundum": "Great cut corundum",
+  "item-gem-cut-normal-corundum": "Small cut corundum",
 
   "item-gem-cut-exquisite-emerald": "Great cut emerald",
   "item-gem-cut-flawless-emerald": "Medium cut emerald",
-  "item-gem-cut-normal-emerald": "Great cut emerald",
+  "item-gem-cut-normal-emerald": "Small cut emerald",
 
   "item-gem-cut-exquisite-fluorite": "Great cut fluorite",
   "item-gem-cut-flawless-fluorite": "Medium cut fluorite",
-  "item-gem-cut-normal-fluorite": "Great cut fluorite",
+  "item-gem-cut-normal-fluorite": "Small cut fluorite",
 
   "item-gem-cut-exquisite-lapislazuli": "Great cut lapislazuli",
   "item-gem-cut-flawless-lapislazuli": "Medium cut lapislazuli",
-  "item-gem-cut-normal-lapislazuli": "Great cut lapislazuli",
+  "item-gem-cut-normal-lapislazuli": "Small cut lapislazuli",
 
   "item-gem-cut-exquisite-malachite": "Great cut malachite",
   "item-gem-cut-flawless-malachite": "Medium cut malachite",
-  "item-gem-cut-normal-malachite": "Great cut malachite",
+  "item-gem-cut-normal-malachite": "Small cut malachite",
 
   "item-gem-cut-exquisite-olivine": "Great cut peridot",
   "item-gem-cut-flawless-olivine": "Medium cut peridot",
-  "item-gem-cut-normal-olivine": "Great cut peridot",
+  "item-gem-cut-normal-olivine": "Small cut peridot",
 
   "item-gem-cut-exquisite-quartz": "Great cut quartz",
   "item-gem-cut-flawless-quartz": "Medium cut quartz",
-  "item-gem-cut-normal-quartz": "Great cut quartz",
+  "item-gem-cut-normal-quartz": "Small cut quartz",
+
 
   "item-gem-cut-exquisite-uranium": "Great cut uranium",
   "item-gem-cut-flawless-uranium": "Medium cut uranium",
-  "item-gem-cut-normal-uranium": "Great cut uranium",
+  "item-gem-cut-normal-uranium": "Small cut uranium",
 
   "item-crushed-diamond": "Crushed diamond",
 
@@ -103,14 +106,22 @@
   "socket-has-attribute-percent": "S.{0} <font color=\"#99c9f9\"> {1}% </font>",
 
   "item-cansocket-steel": "Steel socket",
+  "itemdesc-cansocket-steel": "Small, Medium and Great gems",
   "item-cansocket-tinbronze": "Tin bronze socket",
+  "itemdesc-cansocket-tinbronze": "Small gems only",
   "item-cansocket-bismuthbronze": "Bismuth bronze socket",
+  "itemdesc-cansocket-bismuthbronze": "Small gems only",
   "item-cansocket-blackbronze": "Black bronze socket",
+  "itemdesc-cansocket-blackbronze": "Small gems only",
   "item-cansocket-iron": "Iron socket",
+  "itemdesc-cansocket-iron": "Small and Medium gems",
   "item-cansocket-meteoriciron": "Meteoric iron socket",
+  "itemdesc-cansocket-meteoriciron": "Small and Medium gems",
+
   "block-jewelerset": "Jeweler's table",
   "block-jewelerset-north": "Jeweler's table",
   "block-jewelgrinder": "Jewelgrinder",
+
   "block-grindlayer-rough": "Rough grindlayer",
   "block-grindlayer-medium": "Medium grindlayer",
   "block-grindlayer-fine": "Fine grindlayer",
@@ -141,6 +152,7 @@
   "processedgem-normal-olivine_peridot": "Greate processed olivine",
   "processedgem-normal-quartz": "Greate processed quartz",
   "processedgem-normal-uranium": "Greate processed uranium",
+
   "buff-name-walkspeed": "<font color=\"#99c9f9\">walkspeed</font>",
   "buff-name-miningSpeedMul": "<font color=\"#99c9f9\">mining speed</font>",
   "buff-name-maxhealthExtraPoints": "<font color=\"#99c9f9\">extra health</font>",
